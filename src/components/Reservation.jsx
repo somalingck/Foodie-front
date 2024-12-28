@@ -18,7 +18,7 @@ const Reservation = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "https://polite-bay-0f5403e10.4.azurestaticapps.net/",
+        "https://foodies-g2d5gpfde3gpewef.westeurope-01.azurewebsites.net/api/v1/reservation/send", // Updated to backend API URL
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
